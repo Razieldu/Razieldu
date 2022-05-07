@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Udemy Web Development Ch25 SQL | Jeremy's Blog</title><meta name="author" content="Jeremy"><meta name="copyright" content="Jeremy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="SQL Commands: CREATE table and INSERT dataCreate,Read,Update,Destroy(CRUD) https:&#x2F;&#x2F;sqliteonline.com&#x2F; SQL資料庫操作練習 建立表格123456CREATE TABLE products(   id INT NOT NULL,   name STRING, price MONEY, PRIMARY">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Udemy Web Development Ch25 SQL">
+<meta property="og:url" content="https://razieldu.github.io/2022/04/07/Udemy-WebDevelopment-ch25-SQL/index.html">
+<meta property="og:site_name" content="Jeremy&#39;s Blog">
+<meta property="og:description" content="SQL Commands: CREATE table and INSERT dataCreate,Read,Update,Destroy(CRUD) https:&#x2F;&#x2F;sqliteonline.com&#x2F; SQL資料庫操作練習 建立表格123456CREATE TABLE products(   id INT NOT NULL,   name STRING, price MONEY, PRIMARY">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg">
+<meta property="article:published_time" content="2022-04-07T05:32:55.000Z">
+<meta property="article:modified_time" content="2022-04-28T04:52:06.518Z">
+<meta property="article:author" content="Jeremy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://razieldu.github.io/2022/04/07/Udemy-WebDevelopment-ch25-SQL/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Udemy Web Development Ch25 SQL',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-28 12:52:06'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jeremy's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Udemy Web Development Ch25 SQL</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-07T05:32:55.000Z" title="Created 2022-04-07 13:32:55">2022-04-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-28T04:52:06.518Z" title="Updated 2022-04-28 12:52:06">2022-04-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Web-development/">Web development</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Udemy Web Development Ch25 SQL"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="SQL-Commands-CREATE-table-and-INSERT-data"><a href="#SQL-Commands-CREATE-table-and-INSERT-data" class="headerlink" title="SQL Commands: CREATE table and INSERT data"></a>SQL Commands: CREATE table and INSERT data</h3><p>Create,Read,Update,Destroy(CRUD)</p>
+<p><a target="_blank" rel="noopener" href="https://sqliteonline.com/">https://sqliteonline.com/</a> SQL資料庫操作練習</p>
+<h3 id="建立表格"><a href="#建立表格" class="headerlink" title="建立表格"></a>建立表格</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE products(  </span><br><span class="line"> id INT NOT NULL,  </span><br><span class="line"> name STRING,</span><br><span class="line"> price MONEY,</span><br><span class="line"> PRIMARY KEY(id)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+<p>&#x2F;&#x2F;NOT NULL的含意:if the record does not provide an id,it will not allow it to be created,so it can not be null.<br>&#x2F;&#x2F;id 欄位名稱 INT:data type<br>PRIMARY KEY : constraint uniquely identifies each record in a table.</p>
+<h3 id="在表格插入資料"><a href="#在表格插入資料" class="headerlink" title="在表格插入資料"></a>在表格插入資料</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO products </span><br><span class="line">VALUES(1,&quot;Pen&quot;,1.20)</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC25%E7%AF%80SQL%E5%9C%A8%E8%A1%A8%E6%A0%BC%E8%BC%B8%E5%85%A5%E8%B3%87%E6%96%99.png" alt="網頁開發25節SQL在表格輸入資料.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO products(id,name)</span><br><span class="line">VALUES(2,&quot;apple&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC25%E7%AF%80SQL%E5%9C%A8%E8%A1%A8%E6%A0%BC%E8%BC%B8%E5%85%A5%E8%B3%87%E6%96%99%E6%AC%84%E4%BD%8D%E7%BC%BA%E5%B0%91.png" alt="網頁開發25節SQL在表格輸入資料欄位缺少.png"></p>
+<h3 id="SQL-Commands-READ-SELECT-WHERE"><a href="#SQL-Commands-READ-SELECT-WHERE" class="headerlink" title="SQL Commands: READ,SELECT,WHERE"></a>SQL Commands: READ,SELECT,WHERE</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM products   //*:所有物件,把整個products表格呈現出來</span><br><span class="line"></span><br><span class="line">SELECT name,price FROM products;  //顯示name,price欄位</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM products WHERE id=1</span><br><span class="line">//選取id=1的那一列 </span><br><span class="line"></span><br><span class="line">SELECT name,price FROM products WHERE id=1 </span><br><span class="line">//從products表格,選取id=1的列,只顯示欄位名稱name以及price</span><br></pre></td></tr></table></figure>
+
+<p><strong>Operators in The WHERE Clause</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">=	Equal	</span><br><span class="line">&gt;	Greater than	</span><br><span class="line">&lt;	Less than	</span><br><span class="line">&gt;=	Greater than or equal	</span><br><span class="line">&lt;=	Less than or equal	</span><br><span class="line">&lt;&gt;	Not equal. Note: In some versions of SQL this operator may be written as !=	</span><br><span class="line">BETWEEN	Between a certain range	</span><br><span class="line">LIKE	Search for a pattern	</span><br><span class="line">IN	To specify multiple possible values for a column</span><br></pre></td></tr></table></figure>
+
+<h3 id="Updating-Single-Value-and-Adding-Columns-in-SQL"><a href="#Updating-Single-Value-and-Adding-Columns-in-SQL" class="headerlink" title="Updating Single Value and Adding Columns in SQL"></a>Updating Single Value and Adding Columns in SQL</h3><h3 id="UPdating-a-single-value"><a href="#UPdating-a-single-value" class="headerlink" title="UPdating a single value"></a>UPdating a single value</h3><p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC25%E7%AF%80SQL-UPDATE.png" alt="網頁開發25節SQL-UPDATE.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UPDATE products </span><br><span class="line">SET price=0.80</span><br><span class="line">where id=2   //如果缺少這行,會把所有price欄位都設置為0.8</span><br></pre></td></tr></table></figure>
+
+<h3 id="Update-by-Adding-a-Column"><a href="#Update-by-Adding-a-Column" class="headerlink" title="Update by Adding a Column"></a>Update by Adding a Column</h3><p>在product table新增stock欄位,資料種類為INT</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE products</span><br><span class="line">ADD stock INT</span><br></pre></td></tr></table></figure>
+
+<p>更新row1(id&#x3D;1)以及row2(id&#x3D;2),stock欄位的值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">UPDATE products</span><br><span class="line">SET stock=32</span><br><span class="line">WHERE id=1</span><br><span class="line"></span><br><span class="line">UPDATE products</span><br><span class="line">SET stock=12</span><br><span class="line">WHERE id=2</span><br></pre></td></tr></table></figure>
+
+<h3 id="SQL-command-Delete"><a href="#SQL-command-Delete" class="headerlink" title="SQL command : Delete"></a>SQL command : Delete</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">DELETE FROM products //把id=2 這一個row整行刪除</span><br><span class="line">WHERE id=2</span><br></pre></td></tr></table></figure>
+
+<h3 id="Understanding-SQL-Relationships-Foreign-Keys-and-Inner-Joins"><a href="#Understanding-SQL-Relationships-Foreign-Keys-and-Inner-Joins" class="headerlink" title="Understanding SQL Relationships,Foreign Keys and Inner Joins"></a>Understanding SQL Relationships,Foreign Keys and Inner Joins</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE orders(</span><br><span class="line"> id INT NOT NULL,</span><br><span class="line"> order_number INT,</span><br><span class="line"> customer_id INT,</span><br><span class="line"> product_id INT,</span><br><span class="line"> PRIMARY KEY(id), //本表格一定要輸入的資料</span><br><span class="line"> FOREIGN KEY(customer_id) REFERENCES customers(id),//這個表格的customer_id等同customers表格的id</span><br><span class="line"> FOREIGN KEY(product_id)  REFERENCES products(id) // 這個表格的product_id等同products表格的id</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h3 id="INNER-JOIN"><a href="#INNER-JOIN" class="headerlink" title="INNER JOIN"></a>INNER JOIN</h3><p>提取兩個表格的資料並顯示成一個新表格</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT orders.order_number,customers.first_name,customers.last_name,customers.address</span><br><span class="line">FROM orders</span><br><span class="line">INNER JOIN customers</span><br><span class="line">ON orders.customer_id = customers.id;</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC25%E7%AF%80SQL-INNERJOIN.png" alt="網頁開發25節SQL-INNERJOIN.png"></p>
+<p>提取三個表格的資料並顯示成一個新表格</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">SELECT orders.order_number,products.name,customers.first_name,customers.last_name,customers.address</span><br><span class="line">FROM ((orders </span><br><span class="line">INNER JOIN customers ON orders.customer_id = customers.id) </span><br><span class="line">INNER JOIN products ON orders.product_id=products.id);</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/73baf92cc745335bb1262e32247f9b8587253485/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC25%E7%AF%80SQL-innerjoin%E4%B8%89%E5%80%8B%E8%A1%A8%E6%A0%BC.png" alt="網頁開發25節SQL-innerjoin三個表格.png"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://razieldu.github.io">Jeremy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://razieldu.github.io/2022/04/07/Udemy-WebDevelopment-ch25-SQL/">https://razieldu.github.io/2022/04/07/Udemy-WebDevelopment-ch25-SQL/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/07/Udemy-WebDevelopment-ch26-MongoDB/"><img class="prev-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Udemy Web Development Ch26-MongoDB</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/06/Udemy-WebDevelopment-ch24-Databases/"><img class="next-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Udemy Web Development Ch24 Databases</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jeremy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Razieldu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-Commands-CREATE-table-and-INSERT-data"><span class="toc-number">1.</span> <span class="toc-text">SQL Commands: CREATE table and INSERT data</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8B%E8%A1%A8%E6%A0%BC"><span class="toc-number">2.</span> <span class="toc-text">建立表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%A8%E8%A1%A8%E6%A0%BC%E6%8F%92%E5%85%A5%E8%B3%87%E6%96%99"><span class="toc-number">3.</span> <span class="toc-text">在表格插入資料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-Commands-READ-SELECT-WHERE"><span class="toc-number">4.</span> <span class="toc-text">SQL Commands: READ,SELECT,WHERE</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Updating-Single-Value-and-Adding-Columns-in-SQL"><span class="toc-number">5.</span> <span class="toc-text">Updating Single Value and Adding Columns in SQL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UPdating-a-single-value"><span class="toc-number">6.</span> <span class="toc-text">UPdating a single value</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Update-by-Adding-a-Column"><span class="toc-number">7.</span> <span class="toc-text">Update by Adding a Column</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL-command-Delete"><span class="toc-number">8.</span> <span class="toc-text">SQL command : Delete</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Understanding-SQL-Relationships-Foreign-Keys-and-Inner-Joins"><span class="toc-number">9.</span> <span class="toc-text">Understanding SQL Relationships,Foreign Keys and Inner Joins</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#INNER-JOIN"><span class="toc-number">10.</span> <span class="toc-text">INNER JOIN</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"/></a><div class="content"><a class="title" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer">Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer</a><time datetime="2022-05-06T07:01:44.000Z" title="Created 2022-05-06 15:01:44">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一台電腦設定SSH使用多個Github帳號"/></a><div class="content"><a class="title" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號">一台電腦設定SSH使用多個Github帳號</a><time datetime="2022-05-04T10:00:21.000Z" title="Created 2022-05-04 18:00:21">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="問題解決紀錄"/></a><div class="content"><a class="title" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄">問題解決紀錄</a><time datetime="2022-05-02T06:07:13.000Z" title="Created 2022-05-02 14:07:13">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn how to learn by Barbara Oakley "/></a><div class="content"><a class="title" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley ">Learn how to learn by Barbara Oakley </a><time datetime="2022-05-02T04:43:06.000Z" title="Created 2022-05-02 12:43:06">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"/></a><div class="content"><a class="title" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started">Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started</a><time datetime="2022-04-29T09:02:53.000Z" title="Created 2022-04-29 17:02:53">2022-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jeremy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

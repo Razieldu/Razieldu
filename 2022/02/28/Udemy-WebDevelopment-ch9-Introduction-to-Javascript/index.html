@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Udemy Web Development Ch9 Introduction to javascript | Jeremy's Blog</title><meta name="author" content="Jeremy"><meta name="copyright" content="Jeremy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Javascript 的誕生讓一些簡單的網頁功能不需要透過傳輸資料到伺服器再回傳來執行,而是直接透過網頁瀏覽器來執行程式碼 Java vs Javascript Javascript: interpret programming language(Ruby,Python)Toy language,very slow ,have to execute all the instructions lin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Udemy Web Development Ch9 Introduction to javascript">
+<meta property="og:url" content="https://razieldu.github.io/2022/02/28/Udemy-WebDevelopment-ch9-Introduction-to-Javascript/index.html">
+<meta property="og:site_name" content="Jeremy&#39;s Blog">
+<meta property="og:description" content="Javascript 的誕生讓一些簡單的網頁功能不需要透過傳輸資料到伺服器再回傳來執行,而是直接透過網頁瀏覽器來執行程式碼 Java vs Javascript Javascript: interpret programming language(Ruby,Python)Toy language,very slow ,have to execute all the instructions lin">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg">
+<meta property="article:published_time" content="2022-02-27T16:41:46.000Z">
+<meta property="article:modified_time" content="2022-05-05T14:15:14.437Z">
+<meta property="article:author" content="Jeremy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://razieldu.github.io/2022/02/28/Udemy-WebDevelopment-ch9-Introduction-to-Javascript/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Udemy Web Development Ch9 Introduction to javascript',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-05-05 22:15:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jeremy's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Udemy Web Development Ch9 Introduction to javascript</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-27T16:41:46.000Z" title="Created 2022-02-28 00:41:46">2022-02-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-05-05T14:15:14.437Z" title="Updated 2022-05-05 22:15:14">2022-05-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Web-development/">Web development</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Udemy Web Development Ch9 Introduction to javascript"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="Javascript-的誕生"><a href="#Javascript-的誕生" class="headerlink" title="Javascript 的誕生"></a>Javascript 的誕生</h3><p>讓一些簡單的網頁功能不需要透過傳輸資料到伺服器再回傳來執行,而是直接透過網頁瀏覽器來執行程式碼</p>
+<h3 id="Java-vs-Javascript"><a href="#Java-vs-Javascript" class="headerlink" title="Java vs Javascript"></a>Java vs Javascript</h3><ol>
+<li>Javascript: interpret programming language(Ruby,Python)<br>Toy language,very slow ,have to execute all the instructions line by line.<br>Add some animtion to your website,allow a little bit of user interaction.<br>Nowadays javascript can be seen in frameworks ranging from the front end to the  back end everything.<br>動態程式語言,提供網頁動態互動功能<br>It is supported by all major browsers </li>
+<li>Java: compiled programming language(C&#x2F;C++,Swift)<br>Serious language, end up with very fast running programs</li>
+</ol>
+<p>Java:安卓app<br>Swift:蘋果app<br>Javascript:website and web app</p>
+<h3 id="data-type"><a href="#data-type" class="headerlink" title="data type"></a>data type</h3><p>string:everything that two quotation enclosed<br>number:123</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2+3;</span><br></pre></td></tr></table></figure>
+<p>boolean:true, false</p>
+<h3 id="alert"><a href="#alert" class="headerlink" title="alert()"></a>alert()</h3><p>開發人員工具-&gt;主控台可以練習下javascript<br>開發人員工具-&gt;原始碼-&gt;程式碼片段-&gt;新的程式碼片段,可以編寫程式碼,ctral+enter執行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&quot;Hello world&quot;);</span><br></pre></td></tr></table></figure>
+<p>跳出一個小視窗(pop up)框顯示Hello world</p>
+<h3 id="typeof"><a href="#typeof" class="headerlink" title="typeof()"></a>typeof()</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">typeof(23);</span><br></pre></td></tr></table></figure>
+<p>確認是什麼種類的data type</p>
+<h3 id="prompt"><a href="#prompt" class="headerlink" title="prompt()"></a>prompt()</h3><p>類似python的input</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prompt(&quot;what is your name?&quot;)</span><br></pre></td></tr></table></figure>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E7%AC%AC%E4%B9%9D%E7%AF%80prompt.png" alt="prompt示意圖"></p>
+<h3 id="javascript-variables"><a href="#javascript-variables" class="headerlink" title="javascript variables"></a>javascript variables</h3><h3 id="var-變數"><a href="#var-變數" class="headerlink" title="var 變數"></a>var 變數</h3><p>使用來建立一個新的變數,用來儲存資料</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var myname=&quot;JeremyDu&quot;;</span><br></pre></td></tr></table></figure>
+<p>myname is a data container</p>
+<h3 id="const-變數"><a href="#const-變數" class="headerlink" title="const 變數"></a>const 變數</h3><p>constant 的縮寫</p>
+<p>If I assign it a value ,later on I can not change the value</p>
+<p>賦予他一個值之後,就不能再改變const的值</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const pi=3.14159</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="變數轉換"><a href="#變數轉換" class="headerlink" title="變數轉換"></a>變數轉換</h3><p>解</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var a = &quot;3&quot;;</span><br><span class="line">var b = &quot;8&quot;;</span><br><span class="line">c=a;</span><br><span class="line">a=b;</span><br><span class="line">b=c;</span><br><span class="line">console.log(&quot;a is &quot; + a);</span><br><span class="line">console.log(&quot;b is &quot; + b);</span><br></pre></td></tr></table></figure>
+
+<h3 id="naming-and-naming-conventions-for-javascript-variables"><a href="#naming-and-naming-conventions-for-javascript-variables" class="headerlink" title="naming and naming conventions for javascript variables"></a>naming and naming conventions for javascript variables</h3><ol>
+<li>give your variables meaningful name</li>
+<li>不能使用與程式既有function一樣的名稱</li>
+<li>開頭不可以是數字</li>
+<li>變數名稱不能包含空格</li>
+<li>變數名稱可以包含字母,數字,dollar sign($),underscore(_)</li>
+</ol>
+<h3 id="string-concatenation"><a href="#string-concatenation" class="headerlink" title="string concatenation"></a>string concatenation</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var message=&quot;Hello&quot;;</span><br><span class="line">var name=&quot; Jeremy&quot;</span><br><span class="line">alert(message+name);</span><br></pre></td></tr></table></figure>
+
+<h3 id="字串-length-字串長度"><a href="#字串-length-字串長度" class="headerlink" title="字串.length()  字串長度"></a>字串.length()  字串長度</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">word.length()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var words=prompt(&quot;Please enter your message&quot;);</span><br><span class="line">var num_of_words=words.length</span><br><span class="line">alert(&quot;You have already typed &quot;+num_of_words+&quot;  letters&quot;+&quot;,you still have &quot;+(180-num_of_words)+&quot; letters&quot;+&quot; you can use.&quot;);</span><br></pre></td></tr></table></figure>
+
+<h3 id="筆記或是說明的形式"><a href="#筆記或是說明的形式" class="headerlink" title="筆記或是說明的形式"></a>筆記或是說明的形式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/*訊息*/</span><br></pre></td></tr></table></figure>
+
+<h3 id="字串-slice-x-y"><a href="#字串-slice-x-y" class="headerlink" title="字串.slice(x,y)"></a>字串.slice(x,y)</h3><p>x:起點<br>y:終點(不包含)<br>起點開始取到終點之前,不包含終點</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var name=&quot;jeremy&quot;;</span><br><span class="line">name.slice(0,1);</span><br><span class="line">輸出:j</span><br><span class="line">name.slice(4,5);</span><br><span class="line">輸出:m</span><br><span class="line">name.slice(0,3);</span><br><span class="line">輸出:jer</span><br></pre></td></tr></table></figure>
+<p>將輸入的訊息限制在140個字母</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">message=prompt(&quot;enter your messages&quot;);</span><br><span class="line">messageunder140=message.slice(0,140);</span><br><span class="line">alert(messageunder140);</span><br></pre></td></tr></table></figure>
+<p>或者是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(prompt(&quot;enter your messages&quot;).slice(0,140));</span><br></pre></td></tr></table></figure>
+
+<h3 id="字串-toUpperCase"><a href="#字串-toUpperCase" class="headerlink" title="字串.toUpperCase()"></a>字串.toUpperCase()</h3><p>全部變成大寫</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var name=&quot;Jeremy&quot;;</span><br><span class="line">var name2= name.toUpperCase();</span><br><span class="line">alert(name2);</span><br><span class="line"></span><br><span class="line">輸出:&quot;JEREMY&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="字串-toLowerCase"><a href="#字串-toLowerCase" class="headerlink" title="字串.toLowerCase()"></a>字串.toLowerCase()</h3><p>全部變成小寫</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var name=&quot;Jeremy&quot;;</span><br><span class="line">var name= name.toLowerCase();</span><br><span class="line">alert(name);</span><br><span class="line"></span><br><span class="line">輸出:&quot;jeremy</span><br></pre></td></tr></table></figure>
+
+<h3 id="測驗-名字大小寫轉換"><a href="#測驗-名字大小寫轉換" class="headerlink" title="測驗(名字大小寫轉換)"></a>測驗(名字大小寫轉換)</h3><p>詢問名字,並把名字開頭固定大寫,名字剩下的部分固定小寫</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var name=prompt(&quot;What is your name?&quot;);</span><br><span class="line">var namehead=(name.slice(0,1)).toUpperCase();</span><br><span class="line">var nameother= (name.slice(1,name.length)).toLowerCase();</span><br><span class="line">alert(&quot;Hi. Your name is &quot;+namehead+nameother+&quot;.&quot;);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-floor"><a href="#Math-floor" class="headerlink" title="Math.floor()"></a>Math.floor()</h3><p>函式會回傳<strong>小於等於</strong>所給數字的最大整數</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">console.log(Math.floor(5.95));</span><br><span class="line">// expected output: 5</span><br><span class="line"></span><br><span class="line">console.log(Math.floor(5));</span><br><span class="line">// expected output: 5</span><br><span class="line"></span><br><span class="line">console.log(Math.floor(5.05));</span><br><span class="line">// expected output: 5</span><br><span class="line"></span><br><span class="line">console.log(Math.floor(-5.05));</span><br><span class="line">// expected output: -6</span><br></pre></td></tr></table></figure>
+<h3 id="Math-pow-要進行次方的數值-次方次數"><a href="#Math-pow-要進行次方的數值-次方次數" class="headerlink" title="Math.pow(要進行次方的數值,次方次數)"></a>Math.pow(要進行次方的數值,次方次數)</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// simple</span><br><span class="line">Math.pow(7, 2);    // 49</span><br><span class="line">Math.pow(7, 3);    // 343</span><br><span class="line">Math.pow(2, 10);   // 1024</span><br><span class="line">// fractional exponents</span><br><span class="line">Math.pow(4, 0.5);  // 2 （4 的平方根）</span><br><span class="line">Math.pow(8, 1/3);  // 2 （8 的立方根）</span><br><span class="line">Math.pow(2, 0.5);  // 1.4142135623730951 （2 的平方根）</span><br><span class="line">Math.pow(2, 1/3);  // 1.2599210498948732 （2 的立方根）</span><br><span class="line">// signed exponents</span><br><span class="line">Math.pow(7, -2);   // 0.02040816326530612 (1/49)</span><br><span class="line">Math.pow(8, -1/3); // 0.5</span><br></pre></td></tr></table></figure>
+
+<h3 id="Math-round-x"><a href="#Math-round-x" class="headerlink" title="Math.round(x)"></a>Math.round(x)</h3><p>小數位的部分值大於 0.5, 這個值將會進位. 如果小數位的部分值小於 0.5, 這個值將不會進位.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// Returns the value 20</span><br><span class="line">x = Math.round(20.49);</span><br><span class="line"></span><br><span class="line">// Returns the value 21</span><br><span class="line">x = Math.round(20.5);</span><br><span class="line"></span><br><span class="line">// Returns the value -20</span><br><span class="line">x = Math.round(-20.5);</span><br><span class="line"></span><br><span class="line">// Returns the value -21</span><br><span class="line">x = Math.round(-20.51);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="number"><a href="#number" class="headerlink" title="number"></a>number</h3><p>先乘除後加減,可以使用括號破除這個順序</p>
+<p>addition</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var a=2+3;</span><br></pre></td></tr></table></figure>
+
+<p>subtraction</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var b=3-2;</span><br></pre></td></tr></table></figure>
+
+<p>multiplication</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var c=3*2;</span><br></pre></td></tr></table></figure>
+
+<p>division</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var d=6/3;</span><br></pre></td></tr></table></figure>
+
+<p>modulo</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var e=9%6;</span><br><span class="line">計算9被6除的餘數</span><br></pre></td></tr></table></figure>
+
+<h3 id="測驗"><a href="#測驗" class="headerlink" title="測驗"></a>測驗</h3><p>製作一個狗年齡轉換器<br>humanAge&#x3D;dogAge-2*4+21;</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var dogage=prompt(&quot;How is your dog?&quot;);</span><br><span class="line">var humanage=((dogage-2)*4)+21;</span><br><span class="line">alert(&quot;Your dog is &quot;+humanage+ &quot; years old in human years.&quot;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Increment-and-Decrement"><a href="#Increment-and-Decrement" class="headerlink" title="Increment and Decrement"></a>Increment and Decrement</h3><h3 id="Increment"><a href="#Increment" class="headerlink" title="Increment"></a>Increment</h3><p>1. </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var x=5;</span><br><span class="line">x=x+1;//6</span><br></pre></td></tr></table></figure>
+<p>x&#x3D;x&#x3D;1;<br>等同於<br>x++;&#x2F;&#x2F;6 <strong>(加數是1才能這樣表示)</strong><br>2.<br>加數大於1的表示法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x=5;</span><br><span class="line">x=x=2;//7</span><br><span class="line">x+=2;//7</span><br></pre></td></tr></table></figure>
+<p>3. </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x=5;</span><br><span class="line">var y=3;</span><br><span class="line">x+=y;//8  (also work:+=,-=,*=,/=)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Decrement"><a href="#Decrement" class="headerlink" title="Decrement"></a>Decrement</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var x=5;</span><br><span class="line">x=x-1;//4</span><br></pre></td></tr></table></figure>
+<p>x&#x3D;x-1;<br>等同於<br>x–(雙減號);&#x2F;&#x2F;4 <strong>(減數是1才能這樣表示)</strong></p>
+<h3 id="Funtions"><a href="#Funtions" class="headerlink" title="Funtions"></a>Funtions</h3><h3 id="creat-the-function"><a href="#creat-the-function" class="headerlink" title="creat the function"></a>creat the function</h3><p>function 名稱(){</p>
+<p>}(不需要分號;)</p>
+<h3 id="call-the-function"><a href="#call-the-function" class="headerlink" title="call the function"></a>call the function</h3><p>名稱();</p>
+<p>ctrl+f 可以在開發工具裡面找尋程式碼</p>
+<h3 id="alert-vs-console-log"><a href="#alert-vs-console-log" class="headerlink" title="alert() vs console.log()"></a>alert() vs console.log()</h3><p>alert(): users of the website can see it.</p>
+<p>console.log():it is only for the developer,and it is meant for the developer to debug your code </p>
+<h3 id="Parameters-and-Arguments"><a href="#Parameters-and-Arguments" class="headerlink" title="Parameters and Arguments"></a>Parameters and Arguments</h3><p>在方程式的雙括號裡面新增一個變數</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">function getMilk(money,costPerbottle) &#123;</span><br><span class="line">  console.log(&quot;leaveHouse&quot;);</span><br><span class="line">  console.log(&quot;moveRight&quot;);</span><br><span class="line">  console.log(&quot;moveRight&quot;);</span><br><span class="line">  console.log(&quot;moveUp&quot;);</span><br><span class="line">  console.log(&quot;moveUp&quot;);</span><br><span class="line">  console.log(&quot;moveUp&quot;);</span><br><span class="line">  console.log(&quot;moveUp&quot;);</span><br><span class="line">  console.log(&quot;moveRight&quot;);</span><br><span class="line">  console.log(&quot;moveRight&quot;);</span><br><span class="line">  console.log(&quot;Buy &quot;+calcBottles(money,costPerbottle)+&quot; bottles of milk&quot;);</span><br><span class="line">  console.log(&quot;moveLeft&quot;);</span><br><span class="line">  console.log(&quot;moveLeft&quot;);</span><br><span class="line">  console.log(&quot;moveDown&quot;);</span><br><span class="line">  console.log(&quot;moveDown&quot;);</span><br><span class="line">  console.log(&quot;moveDown&quot;);</span><br><span class="line">  console.log(&quot;moveDown&quot;);</span><br><span class="line">  console.log(&quot;moveLeft&quot;);</span><br><span class="line">  console.log(&quot;moveLeft&quot;);</span><br><span class="line">  console.log(&quot;enterHouse&quot;);</span><br><span class="line">  return calcChange(money,costPerbottle);</span><br><span class="line">&#125;</span><br><span class="line">function calcBottles(startingMoney,costPerbottle)&#123;</span><br><span class="line">   var numOfbottles=Math.floor(startingMoney/costPerbottle);</span><br><span class="line">   return numOfbottles;</span><br><span class="line">&#125;</span><br><span class="line">function calcChange(startingAmount,costPerbottle)&#123;</span><br><span class="line">   var change = startingAmount % costPerbottle;</span><br><span class="line">   return change;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">console.log(&quot;Hello,master here is your &quot;+ getMilk(10,3) + &quot; change.&quot;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>輸入(10,3),function calcBottles(startingMoney,costPerbottle)的startingMoney,以及<br>function calcChange(startingAmount,costPerbottle)的startingAmount都用money的數值帶入,function calcBottles return 數值3,function calcChange return 數值1,在function getMilk 裡面再return一次</p>
+<h3 id="測驗-BMI計算器"><a href="#測驗-BMI計算器" class="headerlink" title="測驗 BMI計算器"></a>測驗 BMI計算器</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function bmiCalculator()&#123;</span><br><span class="line"></span><br><span class="line">var weight= prompt(&quot;Please enter your weight(kg)&quot;)</span><br><span class="line"></span><br><span class="line">var height= prompt(&quot;Please enter your height(meter)&quot;)</span><br><span class="line">var bmi = Math.round(weight/(Math.pow(height,2)));  </span><br><span class="line"></span><br><span class="line">alert(&quot;Your BMI is &quot;+bmi+&quot; .&quot;  ) </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bmiCalculator();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="Number-轉換成數字的型態"><a href="#Number-轉換成數字的型態" class="headerlink" title="Number() 轉換成數字的型態"></a>Number() 轉換成數字的型態</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Number(&quot;3.14&quot;)    // returns 3.14</span><br><span class="line">Number(&quot; &quot;)       // returns 0</span><br><span class="line">Number(&quot;&quot;)        // returns 0</span><br><span class="line">Number(&quot;99 88&quot;)   // returns NaN</span><br></pre></td></tr></table></figure>
+
+<h3 id="String-轉換成字串型態"><a href="#String-轉換成字串型態" class="headerlink" title="String() 轉換成字串型態"></a>String() 轉換成字串型態</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String(x)         // returns a string from a number variable x</span><br><span class="line">String(123)       // returns a string from a number literal 123</span><br><span class="line">String(100 + 23)  // returns a string from a number from an expression</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="parseFloat"><a href="#parseFloat" class="headerlink" title="parseFloat()"></a>parseFloat()</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">parseFloat returning a number</span><br><span class="line"></span><br><span class="line">The following examples all return 3.14:</span><br><span class="line"></span><br><span class="line">parseFloat(3.14);</span><br><span class="line">parseFloat(&#x27;3.14&#x27;);</span><br><span class="line">parseFloat(&#x27;  3.14  &#x27;);</span><br><span class="line">parseFloat(&#x27;314e-2&#x27;);</span><br><span class="line">parseFloat(&#x27;0.0314E+2&#x27;);</span><br><span class="line">parseFloat(&#x27;3.14some non-digit characters&#x27;);</span><br><span class="line">parseFloat(&#123; toString: function() &#123; return &quot;3.14&quot; &#125; &#125;);</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="filter"><a href="#filter" class="headerlink" title="filter()"></a>filter()</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];</span><br><span class="line"></span><br><span class="line">let res = nums.filter((num) =&gt; &#123;</span><br><span class="line">  return num &gt; 5;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">console.log(res);  // [6, 7, 8, 9, 10]</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://razieldu.github.io">Jeremy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://razieldu.github.io/2022/02/28/Udemy-WebDevelopment-ch9-Introduction-to-Javascript/">https://razieldu.github.io/2022/02/28/Udemy-WebDevelopment-ch9-Introduction-to-Javascript/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/02/Udemy-WebDevelopment-ch10-Intermediate-Javascript/"><img class="prev-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Udemy Web Development Ch10 Intermediate Javascript</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/26/Udemy-WebDevelopment-ch8-WebDesignSchool/"><img class="next-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Udemy Web Development Ch8 Web Design School</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jeremy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Razieldu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Javascript-%E7%9A%84%E8%AA%95%E7%94%9F"><span class="toc-number">1.</span> <span class="toc-text">Javascript 的誕生</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Java-vs-Javascript"><span class="toc-number">2.</span> <span class="toc-text">Java vs Javascript</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#data-type"><span class="toc-number">3.</span> <span class="toc-text">data type</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#alert"><span class="toc-number">4.</span> <span class="toc-text">alert()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#typeof"><span class="toc-number">5.</span> <span class="toc-text">typeof()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#prompt"><span class="toc-number">6.</span> <span class="toc-text">prompt()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript-variables"><span class="toc-number">7.</span> <span class="toc-text">javascript variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#var-%E8%AE%8A%E6%95%B8"><span class="toc-number">8.</span> <span class="toc-text">var 變數</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#const-%E8%AE%8A%E6%95%B8"><span class="toc-number">9.</span> <span class="toc-text">const 變數</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%8A%E6%95%B8%E8%BD%89%E6%8F%9B"><span class="toc-number">10.</span> <span class="toc-text">變數轉換</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#naming-and-naming-conventions-for-javascript-variables"><span class="toc-number">11.</span> <span class="toc-text">naming and naming conventions for javascript variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#string-concatenation"><span class="toc-number">12.</span> <span class="toc-text">string concatenation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%B8%B2-length-%E5%AD%97%E4%B8%B2%E9%95%B7%E5%BA%A6"><span class="toc-number">13.</span> <span class="toc-text">字串.length()  字串長度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AD%86%E8%A8%98%E6%88%96%E6%98%AF%E8%AA%AA%E6%98%8E%E7%9A%84%E5%BD%A2%E5%BC%8F"><span class="toc-number">14.</span> <span class="toc-text">筆記或是說明的形式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%B8%B2-slice-x-y"><span class="toc-number">15.</span> <span class="toc-text">字串.slice(x,y)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%B8%B2-toUpperCase"><span class="toc-number">16.</span> <span class="toc-text">字串.toUpperCase()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%B8%B2-toLowerCase"><span class="toc-number">17.</span> <span class="toc-text">字串.toLowerCase()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%AC%E9%A9%97-%E5%90%8D%E5%AD%97%E5%A4%A7%E5%B0%8F%E5%AF%AB%E8%BD%89%E6%8F%9B"><span class="toc-number">18.</span> <span class="toc-text">測驗(名字大小寫轉換)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-floor"><span class="toc-number">19.</span> <span class="toc-text">Math.floor()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-pow-%E8%A6%81%E9%80%B2%E8%A1%8C%E6%AC%A1%E6%96%B9%E7%9A%84%E6%95%B8%E5%80%BC-%E6%AC%A1%E6%96%B9%E6%AC%A1%E6%95%B8"><span class="toc-number">20.</span> <span class="toc-text">Math.pow(要進行次方的數值,次方次數)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-round-x"><span class="toc-number">21.</span> <span class="toc-text">Math.round(x)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number"><span class="toc-number">22.</span> <span class="toc-text">number</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%AC%E9%A9%97"><span class="toc-number">23.</span> <span class="toc-text">測驗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Increment-and-Decrement"><span class="toc-number">24.</span> <span class="toc-text">Increment and Decrement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Increment"><span class="toc-number">25.</span> <span class="toc-text">Increment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Decrement"><span class="toc-number">26.</span> <span class="toc-text">Decrement</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Funtions"><span class="toc-number">27.</span> <span class="toc-text">Funtions</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#creat-the-function"><span class="toc-number">28.</span> <span class="toc-text">creat the function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#call-the-function"><span class="toc-number">29.</span> <span class="toc-text">call the function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#alert-vs-console-log"><span class="toc-number">30.</span> <span class="toc-text">alert() vs console.log()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Parameters-and-Arguments"><span class="toc-number">31.</span> <span class="toc-text">Parameters and Arguments</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%AC%E9%A9%97-BMI%E8%A8%88%E7%AE%97%E5%99%A8"><span class="toc-number">32.</span> <span class="toc-text">測驗 BMI計算器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Number-%E8%BD%89%E6%8F%9B%E6%88%90%E6%95%B8%E5%AD%97%E7%9A%84%E5%9E%8B%E6%85%8B"><span class="toc-number">33.</span> <span class="toc-text">Number() 轉換成數字的型態</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#String-%E8%BD%89%E6%8F%9B%E6%88%90%E5%AD%97%E4%B8%B2%E5%9E%8B%E6%85%8B"><span class="toc-number">34.</span> <span class="toc-text">String() 轉換成字串型態</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#parseFloat"><span class="toc-number">35.</span> <span class="toc-text">parseFloat()</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#filter"><span class="toc-number">36.</span> <span class="toc-text">filter()</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"/></a><div class="content"><a class="title" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer">Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer</a><time datetime="2022-05-06T07:01:44.000Z" title="Created 2022-05-06 15:01:44">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一台電腦設定SSH使用多個Github帳號"/></a><div class="content"><a class="title" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號">一台電腦設定SSH使用多個Github帳號</a><time datetime="2022-05-04T10:00:21.000Z" title="Created 2022-05-04 18:00:21">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="問題解決紀錄"/></a><div class="content"><a class="title" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄">問題解決紀錄</a><time datetime="2022-05-02T06:07:13.000Z" title="Created 2022-05-02 14:07:13">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn how to learn by Barbara Oakley "/></a><div class="content"><a class="title" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley ">Learn how to learn by Barbara Oakley </a><time datetime="2022-05-02T04:43:06.000Z" title="Created 2022-05-02 12:43:06">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"/></a><div class="content"><a class="title" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started">Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started</a><time datetime="2022-04-29T09:02:53.000Z" title="Created 2022-04-29 17:02:53">2022-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jeremy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

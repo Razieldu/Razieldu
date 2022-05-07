@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Ch29 Deploying Your Web Application | Jeremy's Blog</title><meta name="author" content="Jeremy"><meta name="copyright" content="Jeremy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="How to Deploy Web Apps with a DatabaseIn order to access our website, we go to localhost:3000 and that means that we are using our local computer as the server to serve up the information and data in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ch29 Deploying Your Web Application">
+<meta property="og:url" content="https://razieldu.github.io/2022/04/14/Udemy-WebDevelopment-ch29-Deploying-Your-Web-Application/index.html">
+<meta property="og:site_name" content="Jeremy&#39;s Blog">
+<meta property="og:description" content="How to Deploy Web Apps with a DatabaseIn order to access our website, we go to localhost:3000 and that means that we are using our local computer as the server to serve up the information and data in">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg">
+<meta property="article:published_time" content="2022-04-14T07:59:57.000Z">
+<meta property="article:modified_time" content="2022-04-17T10:04:31.740Z">
+<meta property="article:author" content="Jeremy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://razieldu.github.io/2022/04/14/Udemy-WebDevelopment-ch29-Deploying-Your-Web-Application/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Ch29 Deploying Your Web Application',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-17 18:04:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jeremy's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Ch29 Deploying Your Web Application</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-14T07:59:57.000Z" title="Created 2022-04-14 15:59:57">2022-04-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-17T10:04:31.740Z" title="Updated 2022-04-17 18:04:31">2022-04-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Web-development/">Web development</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Ch29 Deploying Your Web Application"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="How-to-Deploy-Web-Apps-with-a-Database"><a href="#How-to-Deploy-Web-Apps-with-a-Database" class="headerlink" title="How to Deploy Web Apps with a Database"></a>How to Deploy Web Apps with a Database</h3><p>In order to access our website, we go to localhost:3000 and that means that we are using our local computer as the server to serve up the information and data in our data and our website.And that backend relies on Node.js. Now in the last module,we also learned how to persist our data to save it to a database using MongoDB. The MongoDB database is also served up from our local computer and the URLs that we use to access be it our server or MongoDB all have the word localhost in it.</p>
+<p>We have been accessing app, we have been using the hypertext transfer protocol(http).We have been going to a port 3000 on the localhost and we needed to access our database,we have been accessing it at port 27017 also on our localhost.Now the part before the colon differs because here we are using(http:localhost:3000) the hypertext transfer protocol,so a set of rules that govern how we transfer data across the Internet to access web pages.But here(mongodb:&#x2F;&#x2F;localhost:27017) we are using the MongoDB rules which determines how you can access data in MongoDB database. </p>
+<ol>
+<li>先前是把專案放上heroku(但是僅限於沒有資料庫的app)</li>
+<li>因為資料庫在我們本地的電腦,假設把app.js的程式碼放上heroku,我們也無法隨時都能打開本地的資料庫,因此我們需要一個24小時都能用的伺服器並把資料庫放上去</li>
+</ol>
+<h3 id="MongoDB-Atlas"><a href="#MongoDB-Atlas" class="headerlink" title="MongoDB Atlas"></a>MongoDB Atlas</h3><p>MongoDB’S own cloud service,this is going to allow us to have a web based address. MongoDB Atlas is going to host our database and served up the data whenever it is needed.So,that means that our Node.js app on Heroku wiil be able to make the necessary requests to our database that is hosted on the MongoDB Atlas cloud service and we will be able to delete,update,or to get data back from that database and that will all happen behind the scenes.Any users who needs to access your website will be going through your app.herokuapp.com and then your backend will liaise(取得聯絡) with MongoDB Atlas in order to talk to the database,so we no longer have any need for hosting  our server or our database locally</p>
+<h3 id="How-to-Setup-MongoDB-Atlas"><a href="#How-to-Setup-MongoDB-Atlas" class="headerlink" title="How to Setup MongoDB Atlas"></a>How to Setup MongoDB Atlas</h3><h3 id="Connect-with-the-MongoDB-Shell"><a href="#Connect-with-the-MongoDB-Shell" class="headerlink" title="Connect with the MongoDB Shell"></a>Connect with the MongoDB Shell</h3><ol>
+<li>到MongoDB網站建立免費雲端資料庫帳號</li>
+<li>進入MongoDB個人頁面,上面頁籤Atlas,點擊Build a database,選擇free,shared,點擊create</li>
+<li>provider選擇AWS,地區選擇推薦的HongKong</li>
+<li>在cluster tier部分選擇 M0 sandbox,additional settings無法變更(使用5.0版本),cluster name 在這邊不做更動</li>
+<li>Add a connection IP address部分,選擇Allow Access from Anywhere,點擊確認</li>
+<li>設置使用者以及密碼,建立使用者(記下帳號密碼)</li>
+<li>點擊Choose a connection method</li>
+<li>點擊Connect with the MongoDB Shell,點擊I have the MongoDB Shell installed,選mongosh</li>
+</ol>
+<h3 id="安裝mongosh"><a href="#安裝mongosh" class="headerlink" title="安裝mongosh"></a>安裝mongosh</h3><p><a target="_blank" rel="noopener" href="https://www.mongodb.com/docs/mongodb-shell/install/#std-label-mdb-shell-install">https://www.mongodb.com/docs/mongodb-shell/install/#std-label-mdb-shell-install</a></p>
+<ol start="9">
+<li>複製:<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongosh &quot;mongodb+srv://cluster0.id8me.mongodb.net/myFirstDatabase&quot; --apiVersion 1 --username admin-jeremy</span><br></pre></td></tr></table></figure>
+到終端機貼上,接著輸入密碼(設置使用者時,使用的密碼)</li>
+</ol>
+<h3 id="測試是否連接成功"><a href="#測試是否連接成功" class="headerlink" title="測試是否連接成功"></a>測試是否連接成功</h3><ol>
+<li><p>登入MongoDB個人頁面</p>
+</li>
+<li><p>點擊左邊database,點擊cluster0,點擊add my own data,輸入資料庫以(test)及collection名稱(test),點擊insert document</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;name:jeremy&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+<li><p>終端機測試</p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">show dbs </span><br><span class="line">use test</span><br><span class="line">show collections </span><br><span class="line">db.test.find(&#123;&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Connect-to-our-application"><a href="#Connect-to-our-application" class="headerlink" title="Connect to our application"></a>Connect to our application</h3><ol>
+<li>到雲端資料庫,點擊connect,點擊:Connect your application</li>
+<li>複製<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mongodb+srv://admin-jeremy:&lt;password&gt;@cluster0.id8me.mongodb.net/myFirstDatabase?retryWrites=true&amp;w=majority</span><br></pre></td></tr></table></figure></li>
+<li>更改app.js程式碼</li>
+</ol>
+<p><strong>app.js</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mongoose.connect(&quot;mongodb+srv://admin-jeremy:密碼@cluster0.id8me.mongodb.net/資料庫名稱&quot;, &#123;</span><br><span class="line">  useNewUrlParser: true</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>Replace 密碼 with the password for the admin-jeremy user. Replace 資料庫名稱 with the name of the database that connections will use by default.</p>
+<h3 id="Deploying-an-APP-with-a-Database-to-Heroku"><a href="#Deploying-an-APP-with-a-Database-to-Heroku" class="headerlink" title="Deploying an APP with a Database to Heroku"></a>Deploying an APP with a Database to Heroku</h3><ol>
+<li><p>在Heroku頁面,點擊documentation,選擇我們使用的後端語言,Node.js,點擊get started,點擊ready to start,點擊have installed Heroku CLI,點擊Prepare the app 標題下的this article </p>
+</li>
+<li><p>Track your codebase in a Git repository</p>
+</li>
+</ol>
+<p>前往終端機,確認是否在專案資料夾,並輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git init </span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;Initial commit&quot;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>Add a Heroku Git remote<br>a.首先登入Heroku<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">heroku login</span><br></pre></td></tr></table></figure>
+b.輸入註冊Heroku的信箱以及密碼,登入Heroku個人網頁<br>c.點擊Add a Heroku Git remote標題下的Creating a Heroku remote to</li>
+</ol>
+<p>終端機輸入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">heroku create</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Add a Procfile<br>確認在專案資料夾<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch Procfile</span><br><span class="line">atom Procfile //使用atom開啟</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>Procfile</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">web: node app.js</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>Listen on the correct port</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let port = process.env.PORT;</span><br><span class="line">if (port == null || port == &quot;&quot;) &#123;</span><br><span class="line">  port = 8000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">app.listen(port, function() &#123;</span><br><span class="line">  console.log(&quot;Server started successfully&quot;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Use a database or object storage instead of writing to your local filesystem<br>已經設置好MongoDB Atlas雲端資料庫</p>
+</li>
+<li><p>Complete language-specific setup<br>點擊Node.js,到Specify the version of node</p>
+</li>
+</ol>
+<p>複製以下代碼到專案資料夾的package.json並在license下方貼上</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;engines&quot;: &#123;</span><br><span class="line">    &quot;node&quot;: &quot;14.x&quot;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<p>package.json</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;todolist-v1&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;1.0.0&quot;,</span><br><span class="line">  &quot;description&quot;: &quot;&quot;,</span><br><span class="line">  &quot;main&quot;: &quot;app.js&quot;,</span><br><span class="line">  &quot;scripts&quot;: &#123;</span><br><span class="line">    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;author&quot;: &quot;&quot;,</span><br><span class="line">  &quot;license&quot;: &quot;ISC&quot;,</span><br><span class="line">  &quot;engines&quot;: &#123;           //使用node --version 並在此處更改</span><br><span class="line">    &quot;node&quot;: &quot;16.14.0&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;body-parser&quot;: &quot;^1.18.3&quot;,</span><br><span class="line">    &quot;ejs&quot;: &quot;^2.6.1&quot;,</span><br><span class="line">    &quot;express&quot;: &quot;^4.16.3&quot;,</span><br><span class="line">    &quot;lodash&quot;: &quot;^4.17.21&quot;,</span><br><span class="line">    &quot;mongoose&quot;: &quot;^6.2.10&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>建立.gitignore檔案</li>
+</ol>
+<p>Heroku會在他們的平台下載我們app需要的node套件,所以我們可以把大量的Node_modules放在.gitignore</p>
+<p>在專案資料夾</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">touch .gitignore</span><br><span class="line">atom .gitignore //打開該檔案</span><br></pre></td></tr></table></figure>
+
+<p>.gitignore</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/node_modules //(在How to keep build artifacts out of git標題)</span><br><span class="line">npm-debug.log</span><br><span class="line">.DS_Store</span><br><span class="line">/*.env</span><br></pre></td></tr></table></figure>
+
+<p>9. </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add.</span><br><span class="line">git commit -m &quot;add Procfile,gitignore and update port&quot;</span><br><span class="line">git push heroku master</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://razieldu.github.io">Jeremy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://razieldu.github.io/2022/04/14/Udemy-WebDevelopment-ch29-Deploying-Your-Web-Application/">https://razieldu.github.io/2022/04/14/Udemy-WebDevelopment-ch29-Deploying-Your-Web-Application/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/04/18/Udemy-WebDevelopment-ch30-Build-Your-Own-RESTful-API-from-Scratch/"><img class="prev-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Udemy Web Development Ch30 Build Your Own RESTful API from Scratch</div></div></a></div><div class="next-post pull-right"><a href="/2022/04/11/Udemy-WebDevelopment-ch28-Put-Everything-Together/"><img class="next-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Udemy Web Development Ch28 Put Everything Together</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jeremy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Razieldu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-Deploy-Web-Apps-with-a-Database"><span class="toc-number">1.</span> <span class="toc-text">How to Deploy Web Apps with a Database</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MongoDB-Atlas"><span class="toc-number">2.</span> <span class="toc-text">MongoDB Atlas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-Setup-MongoDB-Atlas"><span class="toc-number">3.</span> <span class="toc-text">How to Setup MongoDB Atlas</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Connect-with-the-MongoDB-Shell"><span class="toc-number">4.</span> <span class="toc-text">Connect with the MongoDB Shell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%9Dmongosh"><span class="toc-number">5.</span> <span class="toc-text">安裝mongosh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%AC%E8%A9%A6%E6%98%AF%E5%90%A6%E9%80%A3%E6%8E%A5%E6%88%90%E5%8A%9F"><span class="toc-number">6.</span> <span class="toc-text">測試是否連接成功</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Connect-to-our-application"><span class="toc-number">7.</span> <span class="toc-text">Connect to our application</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploying-an-APP-with-a-Database-to-Heroku"><span class="toc-number">8.</span> <span class="toc-text">Deploying an APP with a Database to Heroku</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"/></a><div class="content"><a class="title" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer">Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer</a><time datetime="2022-05-06T07:01:44.000Z" title="Created 2022-05-06 15:01:44">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一台電腦設定SSH使用多個Github帳號"/></a><div class="content"><a class="title" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號">一台電腦設定SSH使用多個Github帳號</a><time datetime="2022-05-04T10:00:21.000Z" title="Created 2022-05-04 18:00:21">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="問題解決紀錄"/></a><div class="content"><a class="title" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄">問題解決紀錄</a><time datetime="2022-05-02T06:07:13.000Z" title="Created 2022-05-02 14:07:13">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn how to learn by Barbara Oakley "/></a><div class="content"><a class="title" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley ">Learn how to learn by Barbara Oakley </a><time datetime="2022-05-02T04:43:06.000Z" title="Created 2022-05-02 12:43:06">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"/></a><div class="content"><a class="title" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started">Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started</a><time datetime="2022-04-29T09:02:53.000Z" title="Created 2022-04-29 17:02:53">2022-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jeremy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Udemy Web Development Ch4 Introdution to CSS | Jeremy's Blog</title><meta name="author" content="Jeremy"><meta name="copyright" content="Jeremy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Introdution-to-CSS全名:Cascading Style Sheet需要搭配基本架構程式碼(HTML)之類的一起使用 參考網站把顏色做排行以及分類:https:&#x2F;&#x2F;colorhunt.co&#x2F;palettes&#x2F;popular標準代碼網站提供的顏色代碼:https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;CSS&#x2F;color_value Inline">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Udemy Web Development Ch4 Introdution to CSS">
+<meta property="og:url" content="https://razieldu.github.io/2022/02/14/Udemy-WebDevelopment-ch4-Introduction-to-CSS/index.html">
+<meta property="og:site_name" content="Jeremy&#39;s Blog">
+<meta property="og:description" content="Introdution-to-CSS全名:Cascading Style Sheet需要搭配基本架構程式碼(HTML)之類的一起使用 參考網站把顏色做排行以及分類:https:&#x2F;&#x2F;colorhunt.co&#x2F;palettes&#x2F;popular標準代碼網站提供的顏色代碼:https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;CSS&#x2F;color_value Inline">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg">
+<meta property="article:published_time" content="2022-02-14T10:35:59.000Z">
+<meta property="article:modified_time" content="2022-04-28T04:48:01.590Z">
+<meta property="article:author" content="Jeremy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://razieldu.github.io/2022/02/14/Udemy-WebDevelopment-ch4-Introduction-to-CSS/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Udemy Web Development Ch4 Introdution to CSS',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-28 12:48:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jeremy's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Udemy Web Development Ch4 Introdution to CSS</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-14T10:35:59.000Z" title="Created 2022-02-14 18:35:59">2022-02-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-28T04:48:01.590Z" title="Updated 2022-04-28 12:48:01">2022-04-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Web-development/">Web development</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Udemy Web Development Ch4 Introdution to CSS"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="Introdution-to-CSS"><a href="#Introdution-to-CSS" class="headerlink" title="Introdution-to-CSS"></a>Introdution-to-CSS</h3><p>全名:Cascading Style Sheet<br>需要搭配基本架構程式碼(HTML)之類的一起使用</p>
+<h3 id="參考網站"><a href="#參考網站" class="headerlink" title="參考網站"></a>參考網站</h3><p>把顏色做排行以及分類:<a target="_blank" rel="noopener" href="https://colorhunt.co/palettes/popular">https://colorhunt.co/palettes/popular</a><br>標準代碼網站提供的顏色代碼:<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value</a></p>
+<h3 id="Inline-CSS"><a href="#Inline-CSS" class="headerlink" title="Inline CSS"></a>Inline CSS</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p style=&quot;color: red; font-size: 20px;&quot;&gt;This is my first paragraph.&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="How-can-we-implement-CSS-code-across-the-entire-web-page"><a href="#How-can-we-implement-CSS-code-across-the-entire-web-page" class="headerlink" title="How can we implement CSS code across the entire web page?"></a>How can we implement CSS code across the entire web page?</h3><h3 id="Internal-CSS"><a href="#Internal-CSS" class="headerlink" title="Internal CSS"></a>Internal CSS</h3><p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%AC%AC%E5%9B%9B%E7%AF%80CSS-hr%20%E7%AF%84%E4%BE%8B%E5%9C%96%E7%89%87.png" alt="網頁開發第四節 CSS 程式碼範例.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">  &lt;title&gt;🚀Jeremy&#x27;s Personal Site&lt;/title&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line"> body&#123;</span><br><span class="line">     background-color:white;</span><br><span class="line"> &#125;</span><br><span class="line"> hr &#123;</span><br><span class="line">   border-style: none;</span><br><span class="line">   border-top-style:dotted;</span><br><span class="line">   border-color:#F0F0F0;</span><br><span class="line">   border-width: 7px;</span><br><span class="line">   width:5%</span><br><span class="line"> &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="重點"><a href="#重點" class="headerlink" title="重點"></a>重點</h3><p>border為一個矩形,先設置為none,再設置上方為dotted,只顯現上方那條線,border-width調整點的大小,<br>width調整全條hr的長度</p>
+<ol>
+<li><p>Everything in the web page is a whole bunch of <strong>boxes</strong></p>
+</li>
+<li><p>The <strong>border-style</strong> property may be specified using one, two, three, or four values.<br>When <strong>one value</strong> is specified, it applies the same style to all four sides.<br>When <strong>two values</strong> are specified, the first style applies to the top and bottom, the second to the left and right.<br>When <strong>three values</strong> are specified, the first style applies to the top, the second to the left and right, the third to the bottom.<br>When <strong>four values</strong> are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).<br>Each value is a keyword chosen from the list below.</p>
+</li>
+</ol>
+<h3 id="External-CSS"><a href="#External-CSS" class="headerlink" title="External CSS"></a>External CSS</h3><ol>
+<li>另外建立一個檔案類別為CSS的檔案,且檔案所在的資料夾必須與index(首頁資料)同個層級,並在個別的網頁都使用link<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;</span><br></pre></td></tr></table></figure></li>
+<li>CSS總檔案頁面中的程式碼</li>
+<li>每一個selector裡面的property依照字母順序依序往下排列,方便尋找<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">body&#123;</span><br><span class="line">    background-color:white;</span><br><span class="line">&#125;</span><br><span class="line">hr &#123;</span><br><span class="line">  border-style: none;</span><br><span class="line">  border-top-style:dotted;</span><br><span class="line">  border-color:#D1D1D1;</span><br><span class="line">  border-width: 7px;</span><br><span class="line">  width:5%</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">h1 &#123;</span><br><span class="line">  color:#191919</span><br><span class="line">&#125;</span><br><span class="line">h2 &#123;</span><br><span class="line">  color:#191919</span><br><span class="line">h3 &#123;</span><br><span class="line">  color:#191919</span><br><span class="line">&#125;</span><br><span class="line">h4 &#123;</span><br><span class="line">  color:#191919</span><br><span class="line">&#125;</span><br><span class="line">p  &#123;</span><br><span class="line">   color:black</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="CSS-Debug"><a href="#CSS-Debug" class="headerlink" title="CSS Debug"></a>CSS Debug</h3><ol>
+<li>使用GOOGLE瀏覽器,點擊右上角三個點,點擊更多工具,點擊開發人員工具,查看裡面產生error的原因</li>
+<li>當三個層級的CSS都同時對一個property做出定義時,優先順序Inline CSS&gt;Internal CSS&gt;External CSS </li>
+<li>總體網頁的風格可以使用external CSS做統一定義,再使用internal CSS以及inline CSS做個別網頁的<br>細部更改</li>
+</ol>
+<h3 id="CSS-syntax"><a href="#CSS-syntax" class="headerlink" title="CSS syntax"></a>CSS syntax</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">selector &#123;property:value;&#125;</span><br><span class="line">selector:who</span><br><span class="line">property:what</span><br><span class="line">value:how</span><br></pre></td></tr></table></figure>
+
+<h3 id="CSS的程式碼忽略"><a href="#CSS的程式碼忽略" class="headerlink" title="CSS的程式碼忽略"></a>CSS的程式碼忽略</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">內容</span><br><span class="line">內容</span><br><span class="line">內容</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+<h3 id="class-attribute"><a href="#class-attribute" class="headerlink" title="class attribute"></a>class attribute</h3><p>當兩張圖片的value值已經在external CSS 定義的時候,但又想給予其中一張圖片不一樣的外觀更動,<br>此時可以使用class attribute</p>
+<ol>
+<li>在external CSS頁面進行selector的分類</li>
+</ol>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%AC%AC%E5%9B%9B%E7%AF%80%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BCSELECTOR%E5%88%86%E9%A1%9E%E7%AF%84%E4%BE%8B.png" alt="網頁開發第四節 CSS selector分類.png"></p>
+<ol start="2">
+<li>在img設定class,進行分類</li>
+</ol>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%AC%AC%E5%9B%9B%E7%AF%80%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BCIMAGE%20SELECTOR%E8%A8%AD%E5%AE%9A.png" alt="網頁開發第四節 CSS設定.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img class=&quot;bacon&quot; src=&quot;https://emojipedia-us.s3.amazonaws.com/thumbs/240/apple/118/bacon_1f953.png&quot; alt=&quot;bacon-img&quot;&gt;</span><br><span class="line">&lt;img class=&quot;broccoli&quot; src=&quot;https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/285/broccoli_1f966.png&quot; alt=&quot;broccoli&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在外部CSS檔案設定分類的個別value</li>
+</ol>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%AC%AC%E5%9B%9B%E7%AF%80%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E5%A4%96%E9%83%A8CSS%20CLASS%20%E8%A8%AD%E5%AE%9A.png" alt="網頁開發第四節 CSS external CSS設定.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.bacon&#123;</span><br><span class="line">  background-color:green;</span><br><span class="line">&#125;</span><br><span class="line">.broccoli&#123;</span><br><span class="line">  background:-color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ID-selector"><a href="#ID-selector" class="headerlink" title="ID selector"></a>ID selector</h3><p>1.internal CSS 設置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1 id=&quot;heading&quot;&gt;I Love Bacon&lt;/h1&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2.external CSS 設置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#heading&#123;</span><br><span class="line">        color:blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="ID-selector-與-class-selector-的差別"><a href="#ID-selector-與-class-selector-的差別" class="headerlink" title="ID selector 與 class selector 的差別"></a>ID selector 與 class selector 的差別</h3><p>ID selector: can only use this ID in one page,<strong>only once</strong><br>class selector: 可以有好幾個物件都被分類為同一個class,或是同一個物件可以有一個以上的class</p>
+<p>同物件兩個分類</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img class=&quot;broccoli circular&quot; src=&quot;網址&quot; alt=&quot;broccoli&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="background-image"><a href="#background-image" class="headerlink" title="background-image"></a>background-image</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image: url(&quot;images/crash.png&quot;);</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://razieldu.github.io">Jeremy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://razieldu.github.io/2022/02/14/Udemy-WebDevelopment-ch4-Introduction-to-CSS/">https://razieldu.github.io/2022/02/14/Udemy-WebDevelopment-ch4-Introduction-to-CSS/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/02/16/Udemy-WebDevelopment-ch5-Intermediate-CSS/"><img class="prev-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Udemy Web Development Ch5 Intermediate CSS</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/12/Udemy-WebDevelopment-ch3-Intermediate-HTML/"><img class="next-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Udemy Web Development Ch3 Intermediate HTML</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jeremy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Razieldu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Introdution-to-CSS"><span class="toc-number">1.</span> <span class="toc-text">Introdution-to-CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%83%E8%80%83%E7%B6%B2%E7%AB%99"><span class="toc-number">2.</span> <span class="toc-text">參考網站</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Inline-CSS"><span class="toc-number">3.</span> <span class="toc-text">Inline CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-can-we-implement-CSS-code-across-the-entire-web-page"><span class="toc-number">4.</span> <span class="toc-text">How can we implement CSS code across the entire web page?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Internal-CSS"><span class="toc-number">5.</span> <span class="toc-text">Internal CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E9%BB%9E"><span class="toc-number">6.</span> <span class="toc-text">重點</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#External-CSS"><span class="toc-number">7.</span> <span class="toc-text">External CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-Debug"><span class="toc-number">8.</span> <span class="toc-text">CSS Debug</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-syntax"><span class="toc-number">9.</span> <span class="toc-text">CSS syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS%E7%9A%84%E7%A8%8B%E5%BC%8F%E7%A2%BC%E5%BF%BD%E7%95%A5"><span class="toc-number">10.</span> <span class="toc-text">CSS的程式碼忽略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#class-attribute"><span class="toc-number">11.</span> <span class="toc-text">class attribute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ID-selector"><span class="toc-number">12.</span> <span class="toc-text">ID selector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ID-selector-%E8%88%87-class-selector-%E7%9A%84%E5%B7%AE%E5%88%A5"><span class="toc-number">13.</span> <span class="toc-text">ID selector 與 class selector 的差別</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#background-image"><span class="toc-number">14.</span> <span class="toc-text">background-image</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"/></a><div class="content"><a class="title" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer">Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer</a><time datetime="2022-05-06T07:01:44.000Z" title="Created 2022-05-06 15:01:44">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一台電腦設定SSH使用多個Github帳號"/></a><div class="content"><a class="title" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號">一台電腦設定SSH使用多個Github帳號</a><time datetime="2022-05-04T10:00:21.000Z" title="Created 2022-05-04 18:00:21">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="問題解決紀錄"/></a><div class="content"><a class="title" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄">問題解決紀錄</a><time datetime="2022-05-02T06:07:13.000Z" title="Created 2022-05-02 14:07:13">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn how to learn by Barbara Oakley "/></a><div class="content"><a class="title" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley ">Learn how to learn by Barbara Oakley </a><time datetime="2022-05-02T04:43:06.000Z" title="Created 2022-05-02 12:43:06">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"/></a><div class="content"><a class="title" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started">Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started</a><time datetime="2022-04-29T09:02:53.000Z" title="Created 2022-04-29 17:02:53">2022-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jeremy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

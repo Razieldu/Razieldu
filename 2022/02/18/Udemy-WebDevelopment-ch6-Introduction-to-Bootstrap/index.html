@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Udemy Web Development Ch6 Introduction to Bootstrap | Jeremy's Blog</title><meta name="author" content="Jeremy"><meta name="copyright" content="Jeremy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="What is bootstrapFront-End-LibraryFront-end: the face of the website or mobile app Back-end: serve or database,basically behind the scenes sort of business logichow your web site or how your app is go">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Udemy Web Development Ch6 Introduction to Bootstrap">
+<meta property="og:url" content="https://razieldu.github.io/2022/02/18/Udemy-WebDevelopment-ch6-Introduction-to-Bootstrap/index.html">
+<meta property="og:site_name" content="Jeremy&#39;s Blog">
+<meta property="og:description" content="What is bootstrapFront-End-LibraryFront-end: the face of the website or mobile app Back-end: serve or database,basically behind the scenes sort of business logichow your web site or how your app is go">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg">
+<meta property="article:published_time" content="2022-02-18T10:35:59.000Z">
+<meta property="article:modified_time" content="2022-04-28T04:48:31.714Z">
+<meta property="article:author" content="Jeremy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://razieldu.github.io/2022/02/18/Udemy-WebDevelopment-ch6-Introduction-to-Bootstrap/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Udemy Web Development Ch6 Introduction to Bootstrap',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-28 12:48:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jeremy's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Udemy Web Development Ch6 Introduction to Bootstrap</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-02-18T10:35:59.000Z" title="Created 2022-02-18 18:35:59">2022-02-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-28T04:48:31.714Z" title="Updated 2022-04-28 12:48:31">2022-04-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Web-development/">Web development</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Udemy Web Development Ch6 Introduction to Bootstrap"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="What-is-bootstrap"><a href="#What-is-bootstrap" class="headerlink" title="What is bootstrap"></a>What is bootstrap</h3><h3 id="Front-End-Library"><a href="#Front-End-Library" class="headerlink" title="Front-End-Library"></a>Front-End-Library</h3><p>Front-end: the face of the website or mobile app</p>
+<p>Back-end: serve or database,basically behind the scenes sort of business logic<br>how your web site or how your app is going to work,determine how everything is going to work</p>
+<p>Front-end language: HTML CSS Javascript<br>Back-end language:Ruby .Net PHP Java NodeJS SQL</p>
+<p>Bootstrapd框架: front-end framework or library</p>
+<p>A bunch of code that was written to be reusable that you can drop into your<br>your site ,and it will make designing the website much,much easier for you</p>
+<p>Developed by Twitter in order to try and get consistency across website that they design,free open-source</p>
+<p>Responsive:</p>
+<p>Users are moving away from desktop towards mobile,a lot of website need to be responsive,means that respond to the view port. 無論你使用什麼工具:手機,平板,或是電腦,都可以提供最佳的瀏覽體驗(best take advantage of the size of the screen real estate) <strong>Adaptable-layout</strong> Your website changes its design deponds on where it’s being displayed. Bootstrap makes it super easy.</p>
+<p>Pre-styled Elements:</p>
+<p>有許多現成的模組可以使用,你只需要導入程式碼即可,在製作按鈕的時候,使用HTML按鈕的呈現過於簡單,使用CSS製作,又需要大量程式碼</p>
+<p>使用bootstrap製作的按鈕</p>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E7%AC%AC%E5%85%AD%E7%AF%80%20%E4%BD%BF%E7%94%A8bootstrap%E6%A1%86%E6%9E%B6%E7%9A%84%E6%8C%89%E9%88%95.png" alt="程式碼呈現.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;button class=&quot;btn btn-primary&quot;&gt;Hello world&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<p>只是簡單的打出關鍵字,具有margin-radius</p>
+<p><a target="_blank" rel="noopener" href="https://getbootstrap.com/">https://getbootstrap.com/</a> (官方網站,有範本能夠使用,以及相關的導入公式)</p>
+<h3 id="Install-bootstrap"><a href="#Install-bootstrap" class="headerlink" title="Install bootstrap"></a>Install bootstrap</h3><p>CDN: Content Delivery Network<br>如果只有一個固定地點可以獲取網站資料,如果距離比較遠,傳輸速度會有所延遲,因此比較有<br>效率的方法就是在各個主要的地點都有一個地點能夠獲取資料,發出取得資料的請求時,會自動<br>尋找最接近的地點<br>In term of bootstrap,they host their bootstrap CSC files on MAX client which has<br>a whole routing points across the world.</p>
+<p>以上解釋了為什麼從bootstrap網站複製導入程式碼的時候,網址是會變動的</p>
+<ol>
+<li>安裝方法1</li>
+</ol>
+<p>建置好基本架構之後,到官方網站複製link,在head的部分修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;html lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;Bootstrap Installation&lt;/title&gt;</span><br><span class="line">    &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3&quot; crossorigin=&quot;anonymous&quot;&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>安裝方法2 最簡易</li>
+</ol>
+<p>直接在官方網站複製starter template ,整個網頁的基本架構</p>
+<ol start="3">
+<li>直接下載網站css資源檔案,在網頁中使用link導入,記得要放在同一個資料夾(bootstrap.css)<br><strong>bootstrap的link一定要放在外部css的link之上</strong></li>
+</ol>
+<h3 id="Wireframing"><a href="#Wireframing" class="headerlink" title="Wireframing"></a>Wireframing</h3><p>網頁設計之前先畫一個設計圖,進行排版,再開始進行編碼的動作</p>
+<h3 id="Navigation-bar"><a href="#Navigation-bar" class="headerlink" title="Navigation bar"></a>Navigation bar</h3><p>bootstrap官方網站左邊清單裡面的components,上面有模組可以複製下載更改成想要的內容<br>可以先複製到codeply.com 裡面看下呈現出來的效果,不過要記得導入bootstrap</p>
+<h3 id="Tingdog-Project"><a href="#Tingdog-Project" class="headerlink" title="Tingdog Project"></a>Tingdog Project</h3><p>選擇商標在左,選單在右邊的toggle模組,並且更改下方選單list</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class=&quot;navbar-nav ms-auto&quot;&gt;</span><br><span class="line">          &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">            &lt;a class=&quot;nav-link active&quot; aria-current=&quot;page&quot; href=&quot;#&quot;&gt;Contact&lt;/a&gt;</span><br><span class="line">          &lt;/li&gt;</span><br><span class="line">          &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Pricing&lt;/a&gt;</span><br><span class="line">          &lt;/li&gt;</span><br><span class="line">          &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">            &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Download&lt;/a&gt;</span><br><span class="line">          &lt;/li&gt;</span><br><span class="line">        &lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>更改為navbar-nav ms-auto,讓擠在左方的選單標題轉換到網頁右邊</strong></p>
+<p>但是縮小網頁寬度時,雖然選單依照預期縮成三橫線的總選單按鈕,但是<br>卻無法點擊開來,此時需要到bootstrap複製javascript(讓網頁動起來) link碼到index的head的部分</p>
+<h3 id="Bootstrap-grid-layout-system"><a href="#Bootstrap-grid-layout-system" class="headerlink" title="Bootstrap grid layout system"></a>Bootstrap grid layout system</h3><p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E7%AC%AC%E4%B8%89%E7%AF%80div%E8%A3%9C%E5%85%85.png" alt="程式碼呈現.png"></p>
+<p>一般情況下:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line"> &lt;div class=&quot;row&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;col&quot;  style=&quot;background-color:red; border: 1px solid;&quot;&gt;</span><br><span class="line">        col</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;col&quot;  style=&quot;background-color:red; border: 1px solid;&quot;&gt;</span><br><span class="line">        col</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;col&quot;  style=&quot;background-color:red; border: 1px solid;&quot;&gt;</span><br><span class="line">        col</span><br><span class="line">    &lt;/div&gt;  </span><br><span class="line"> &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>div裡面的三個div會平分最外部div的空間,需要三個內部div,每個才是1&#x2F;3<br>class&#x3D;”row”是必要的,這樣才能讓圖片呈現在同一個橫排上</p>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E7%AC%AC%E5%85%AD%E7%AF%80%20bootstrap%E9%80%B2%E9%9A%8Ediv.png" alt="程式碼呈現.png"></p>
+<p>使用bootstrap:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;row&quot;&gt;</span><br><span class="line">     &lt;div class=&quot;col-9&quot; style=&quot;background-color:green; border:1px solid&quot;&gt;</span><br><span class="line">         col</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;div class=&quot;col-3&quot; style=&quot;background-color:blue; border:1px solid&quot;&gt;</span><br><span class="line">         col</span><br><span class="line">     &lt;/div&gt;          </span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>完整的頁面左到右用12&#x2F;12來呈現,分成9&#x2F;12以及3&#x2F;12,但是div的最大寬度會隨著頁面縮小跟著縮小,<br>假設是四張圖片檔也會跟著縮小,不會因為畫面縮小減少呈現的張數(可能是隨著寬度只呈現三張甚至是兩張)</p>
+<p>class&#x3D;”row”是必要的,這樣才能讓圖片呈現在同一個橫排上</p>
+<p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E7%AC%AC%E5%85%AD%E7%AF%80responsitive%E6%AC%84%E4%BD%8D.png" alt="程式碼呈現.png"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;row&quot;&gt;</span><br><span class="line">     &lt;div class=&quot;col-6&quot; style=&quot;background-color:green; border:1px solid&quot;&gt;</span><br><span class="line">         col</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;div class=&quot;col-6&quot; style=&quot;background-color:green; border:1px solid&quot;&gt;</span><br><span class="line">         col</span><br><span class="line">     &lt;/div&gt;          </span><br><span class="line"> &lt;/div&gt;</span><br><span class="line"> &lt;div class=&quot;row&quot;&gt;</span><br><span class="line">     &lt;div class=&quot;col-md-6&quot; style=&quot;background-color:yellow; border:1px solid&quot;&gt;</span><br><span class="line">         col-md-6</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">      &lt;div class=&quot;col-md-6&quot; style=&quot;background-color:yellow; border:1px solid&quot;&gt;</span><br><span class="line">         col-md-6</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>col-md-6:這種欄位的呈現方式會隨著寬度去調整,當寬度不夠呈現6的單位的寬度時,就會維持每個欄位的寬度為<br>頁面最寬的寬度<br>class&#x3D;”row”是必要的,這樣才能讓圖片呈現在同一個橫排上</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;row&quot;&gt;</span><br><span class="line"> &lt;div class=&quot;row&quot;&gt;</span><br><span class="line">     &lt;div class=&quot;col-lg-3 col-md-4 col-sm-6&quot; style=&quot;background-color:yellow; border:1px solid&quot;&gt;</span><br><span class="line">         col-md-6</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">      &lt;div class=&quot;col-lg-3 col-md-4 col-sm-6&quot; style=&quot;background-color:yellow; border:1px solid&quot;&gt;</span><br><span class="line">         col-md-6</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;div class=&quot;col-lg-3 col-md-4 col-sm-6&quot; style=&quot;background-color:yellow; border:1px solid&quot;&gt;</span><br><span class="line">         col-md-6</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">      &lt;div class=&quot;col-lg-3 col-md-4 col-sm-6&quot; style=&quot;background-color:yellow; border:1px solid&quot;&gt;</span><br><span class="line">         col-md-6</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line"> &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>程式碼class說明:代表在大頁面的時候進行頁面四等分,中頁面(平板)的時候進行頁面三等分,小頁面(手機)的時候進行頁面兩等分<br>class&#x3D;”row”是必要的,這樣才能讓圖片呈現在同一個橫排上</p>
+<h3 id="專案部分"><a href="#專案部分" class="headerlink" title="專案部分"></a>專案部分</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark bg-dark&quot;&gt;</span><br><span class="line">變為</span><br><span class="line">&lt;nav class=&quot;navbar navbar-expand-lg navbar-dark &quot;&gt;</span><br><span class="line">navtar背景顏色被移除</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;row&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;</span><br><span class="line">      &lt;h1&gt;Meet new and interesting dogs nearby.&lt;/h1&gt;</span><br><span class="line">      &lt;button type=&quot;button&quot;&gt;Download&lt;/button&gt;</span><br><span class="line">      &lt;button type=&quot;button&quot;&gt;Download&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=&quot;col-lg-6 col-md-12 col-sm-12&quot;&gt;</span><br><span class="line">      &lt;img src=&quot;images/iphone6.png&quot; alt=&quot;iphone-mockup&quot;&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>把section title 部分的文字在大頁面各50趴,中小型頁面100趴</p>
+<p><strong>col-md-12 col-sm-12:這個部分可以不用寫,因為預設值就是100趴頁面寬度</strong></p>
+<h3 id="CSS-lINK-ORDER"><a href="#CSS-lINK-ORDER" class="headerlink" title="CSS lINK ORDER"></a>CSS lINK ORDER</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">styles1.css</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">background-color: red;</span><br><span class="line">&#125;</span><br><span class="line">styles2.css</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">background-color: blue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles2.css&quot;&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;styles1.css&quot;&gt;</span><br><span class="line"></span><br><span class="line">在底下的會被執行</span><br></pre></td></tr></table></figure>
+
+<p>So following that logic, if your custom styles are not overriding the bootstrap styles, all you need to do is <strong>move the link to your custom stylesheet to a line after the bootstrap CDN link</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=&quot;https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>This means that you first load the default bootstrap styles, then you can override some of those components with your own custom CSS.</p>
+<p>Unlike CSS and JavaScript, HTML code is executed from top to bottom so the order of your code matters.</p>
+<h3 id="Bootstrap-container"><a href="#Bootstrap-container" class="headerlink" title="Bootstrap container"></a>Bootstrap container</h3><p><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E7%B6%B2%E9%A0%81%E9%96%8B%E7%99%BC%E7%AC%AC%E5%85%AD%E7%AF%80bootstrap-container.png" alt="程式碼呈現.png"></p>
+<ol>
+<li><p>container<br>container 是響應式的, 是一個響應的、固定寬度的 container，內含的 max-width 會在每個斷點中改變數值<br>自動responsive,自動更改寬度隨著頁面大小,左右兩邊到頁面邊緣還會有空間</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">內容</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Fluid container</p>
+</li>
+</ol>
+<p>完全填滿頁面寬度,不管今天是哪種頁面寬度</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;container-fluid&quot;&gt;</span><br><span class="line">內容</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Bootstrap-button"><a href="#Bootstrap-button" class="headerlink" title="Bootstrap button"></a>Bootstrap button</h3><p>bootstrap頁面有各種button樣式可以選擇<br><a target="_blank" rel="noopener" href="https://getbootstrap.com/docs/5.1/components/buttons/">https://getbootstrap.com/docs/5.1/components/buttons/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button type=&quot;button&quot; class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;</span><br><span class="line">專案按鈕樣式</span><br></pre></td></tr></table></figure>
+
+<p>更改button的size</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">btn-lg 大</span><br><span class="line">btn-sm 小</span><br></pre></td></tr></table></figure>
+
+<p>專案程式碼變為</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;button type=&quot;button&quot; class=&quot;btn btn-dark btn-lg&quot;&gt;Download&lt;/button&gt;</span><br><span class="line">&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-light btn-lg&quot;&gt;Download&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="導入fontawesome"><a href="#導入fontawesome" class="headerlink" title="導入fontawesome"></a>導入fontawesome</h3><p>使用個人信箱辦帳,取得kit<br>到網站取得kit,到head部分貼上</p>
+<p><strong>把導入head的插件做分類</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- bootstrap --&gt;</span><br></pre></td></tr></table></figure>
+<p>先highlight要標記的文字,ctrl+&#x2F;</p>
+<h2 id="專案部分-導入按鈕前面的蘋果小圖案"><a href="#專案部分-導入按鈕前面的蘋果小圖案" class="headerlink" title="專案部分:導入按鈕前面的蘋果小圖案"></a>專案部分:導入按鈕前面的蘋果小圖案</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">導入前</span><br><span class="line">&lt;button type=&quot;button&quot; class=&quot;btn btn-dark btn-lg&quot;&gt;Download&lt;/button&gt;</span><br><span class="line">導入後</span><br><span class="line">&lt;button type=&quot;button&quot; class=&quot;btn btn-dark btn-lg&quot;&gt;&lt;i class=&quot;fa-brands fa-apple&quot;&gt;&lt;/i&gt; Download&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class=&quot;fa-solid fa-heart&quot;&gt;&lt;/i&gt;</span><br><span class="line">變為四倍大小</span><br><span class="line">&lt;i class=&quot;fa-solid fa-heart fa-4x&quot;&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+
+<p>需要思考:當瀏覽者點進來網頁的時候,想呈現給他們的第一樣東西是什麼</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://razieldu.github.io">Jeremy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://razieldu.github.io/2022/02/18/Udemy-WebDevelopment-ch6-Introduction-to-Bootstrap/">https://razieldu.github.io/2022/02/18/Udemy-WebDevelopment-ch6-Introduction-to-Bootstrap/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/02/22/Udemy-WebDevelopment-ch7-Intermediate-Bootstrap/"><img class="prev-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Udemy Web Development Ch7 Intermediate Bootstrap</div></div></a></div><div class="next-post pull-right"><a href="/2022/02/16/Udemy-WebDevelopment-ch5-Intermediate-CSS/"><img class="next-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Udemy Web Development Ch5 Intermediate CSS</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jeremy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">51</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Razieldu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#What-is-bootstrap"><span class="toc-number">1.</span> <span class="toc-text">What is bootstrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Front-End-Library"><span class="toc-number">2.</span> <span class="toc-text">Front-End-Library</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install-bootstrap"><span class="toc-number">3.</span> <span class="toc-text">Install bootstrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Wireframing"><span class="toc-number">4.</span> <span class="toc-text">Wireframing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Navigation-bar"><span class="toc-number">5.</span> <span class="toc-text">Navigation bar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tingdog-Project"><span class="toc-number">6.</span> <span class="toc-text">Tingdog Project</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bootstrap-grid-layout-system"><span class="toc-number">7.</span> <span class="toc-text">Bootstrap grid layout system</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%88%E6%A1%88%E9%83%A8%E5%88%86"><span class="toc-number">8.</span> <span class="toc-text">專案部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS-lINK-ORDER"><span class="toc-number">9.</span> <span class="toc-text">CSS lINK ORDER</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bootstrap-container"><span class="toc-number">10.</span> <span class="toc-text">Bootstrap container</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Bootstrap-button"><span class="toc-number">11.</span> <span class="toc-text">Bootstrap button</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%8E%E5%85%A5fontawesome"><span class="toc-number">12.</span> <span class="toc-text">導入fontawesome</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%88%E6%A1%88%E9%83%A8%E5%88%86-%E5%B0%8E%E5%85%A5%E6%8C%89%E9%88%95%E5%89%8D%E9%9D%A2%E7%9A%84%E8%98%8B%E6%9E%9C%E5%B0%8F%E5%9C%96%E6%A1%88"><span class="toc-number"></span> <span class="toc-text">專案部分:導入按鈕前面的蘋果小圖案</span></a></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer"/></a><div class="content"><a class="title" href="/2022/05/06/Udemy-WebDevelopment-ch34-Web3-Decentralised-App-Development-with-Intermet-computer/" title="Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer">Udemy-WebDevelopment ch34 Web3 Decentralised App Development with Intermet computer</a><time datetime="2022-05-06T07:01:44.000Z" title="Created 2022-05-06 15:01:44">2022-05-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一台電腦設定SSH使用多個Github帳號"/></a><div class="content"><a class="title" href="/2022/05/04/%E9%9B%BB%E8%85%A6%E8%A8%AD%E5%AE%9ASSH%E4%BD%BF%E7%94%A8%E5%A4%9A%E5%80%8BGit%E5%B8%B3%E8%99%9F/" title="一台電腦設定SSH使用多個Github帳號">一台電腦設定SSH使用多個Github帳號</a><time datetime="2022-05-04T10:00:21.000Z" title="Created 2022-05-04 18:00:21">2022-05-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="問題解決紀錄"/></a><div class="content"><a class="title" href="/2022/05/02/%E5%95%8F%E9%A1%8C%E8%A7%A3%E6%B1%BA%E7%B4%80%E9%8C%84/" title="問題解決紀錄">問題解決紀錄</a><time datetime="2022-05-02T06:07:13.000Z" title="Created 2022-05-02 14:07:13">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Learn how to learn by Barbara Oakley "/></a><div class="content"><a class="title" href="/2022/05/02/Learn%20how%20to%20learn%20by%20Barbara%20Oakley/" title="Learn how to learn by Barbara Oakley ">Learn how to learn by Barbara Oakley </a><time datetime="2022-05-02T04:43:06.000Z" title="Created 2022-05-02 12:43:06">2022-05-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started"/></a><div class="content"><a class="title" href="/2022/04/29/Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started/" title="Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started">Udemy-TheCompleteJavascriptCourse-ch1-Getting-Started</a><time datetime="2022-04-29T09:02:53.000Z" title="Created 2022-04-29 17:02:53">2022-04-29</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jeremy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
