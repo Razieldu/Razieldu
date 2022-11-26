@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Udemy The Complete JavaScript Course | Jeremy's Blog</title><meta name="author" content="Jeremy"><meta name="copyright" content="Jeremy"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Modern Js從 2015 版本(ES6)到現在,從 2015 年開始是個重大的變革 引入方式 寫在html上123&lt;script&gt;console.log(&quot;invest myself&quot;)&lt;&#x2F;script&gt; 外部引入1234&lt;body&gt;&lt;h1&gt;JavaScript Fundamentals – Part 1&lt;&#x2F;h1&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Udemy The Complete JavaScript Course">
+<meta property="og:url" content="https://razieldu.github.io/2022/11/17/Udemy-The-Complete-Javascript-Course-ch1-Getting-Started/index.html">
+<meta property="og:site_name" content="Jeremy&#39;s Blog">
+<meta property="og:description" content="Modern Js從 2015 版本(ES6)到現在,從 2015 年開始是個重大的變革 引入方式 寫在html上123&lt;script&gt;console.log(&quot;invest myself&quot;)&lt;&#x2F;script&gt; 外部引入1234&lt;body&gt;&lt;h1&gt;JavaScript Fundamentals – Part 1&lt;&#x2F;h1&amp;gt">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg">
+<meta property="article:published_time" content="2022-11-17T11:08:52.000Z">
+<meta property="article:modified_time" content="2022-11-19T11:18:14.711Z">
+<meta property="article:author" content="Jeremy">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://razieldu.github.io/2022/11/17/Udemy-The-Complete-Javascript-Course-ch1-Getting-Started/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Udemy The Complete JavaScript Course',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-11-19 19:18:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">85</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">8</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jeremy's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Udemy The Complete JavaScript Course</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-11-17T11:08:52.000Z" title="Created 2022-11-17 19:08:52">2022-11-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-11-19T11:18:14.711Z" title="Updated 2022-11-19 19:18:14">2022-11-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Web-development/">Web development</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Udemy The Complete JavaScript Course"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="Modern-Js"><a href="#Modern-Js" class="headerlink" title="Modern Js"></a>Modern Js</h3><p>從 2015 版本(ES6)到現在,從 2015 年開始是個重大的變革</p>
+<h3 id="引入方式"><a href="#引入方式" class="headerlink" title="引入方式"></a>引入方式</h3><ol>
+<li>寫在html上<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">console.log(&quot;invest myself&quot;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+<li>外部引入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;JavaScript Fundamentals – Part 1&lt;/h1&gt;</span><br><span class="line">&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="資料型態"><a href="#資料型態" class="headerlink" title="資料型態"></a>資料型態</h3><ol>
+<li>object</li>
+<li>primitive:string,number,boolean,null,undefined,symbol,bigInt</li>
+</ol>
+<h3 id="Dynamic-Typing"><a href="#Dynamic-Typing" class="headerlink" title="Dynamic Typing"></a>Dynamic Typing</h3><p>Javascript會自動決定所儲存的值的資料型態,值擁有資料的型態而不是變數<br>可以賦予一個變數,不同資料型態的值</p>
+<h3 id="使用typeof來確認資料型態"><a href="#使用typeof來確認資料型態" class="headerlink" title="使用typeof來確認資料型態"></a>使用typeof來確認資料型態</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof true)///boolean</span><br></pre></td></tr></table></figure>
+
+<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>資料型態以及值都是undefined</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">let a;</span><br><span class="line">console.log(typeof a) ///undefined</span><br><span class="line">console.log(a) ///undefined</span><br></pre></td></tr></table></figure>
+
+<h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let a  = null</span><br><span class="line"></span><br><span class="line">console.log(a) ///null</span><br><span class="line">console.log(typeof a) ///object</span><br></pre></td></tr></table></figure>
+
+<h3 id="變數宣告"><a href="#變數宣告" class="headerlink" title="變數宣告"></a>變數宣告</h3><p>mutate:給變數重新賦值的動作</p>
+<p>const:使用const宣告的變數無法mutate,不會重新賦予值的變數使用const 宣告</p>
+<h3 id="操作符號"><a href="#操作符號" class="headerlink" title="操作符號"></a>操作符號</h3><p><strong>優先序</strong>:每一種操作符號都有特定的執行優先序,減號的優先程度就會比大於符號優先,優先序高的操作符號,會先被執行<br><strong>執行方向</strong>:減號操作符(左到右),等號賦值操作符(右到左)</p>
+<h3 id="換行符號"><a href="#換行符號" class="headerlink" title="換行符號"></a>換行符號</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">方式一</span><br><span class="line">console.log(&quot;first line \n\</span><br><span class="line">second line \n\</span><br><span class="line">third line  \n\</span><br><span class="line">&quot;)</span><br><span class="line"></span><br><span class="line">方式二</span><br><span class="line">console.log(`</span><br><span class="line">first line</span><br><span class="line">second line</span><br><span class="line">third line </span><br><span class="line">`)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="https://razieldu.github.io">Jeremy</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://razieldu.github.io/2022/11/17/Udemy-The-Complete-Javascript-Course-ch1-Getting-Started/">https://razieldu.github.io/2022/11/17/Udemy-The-Complete-Javascript-Course-ch1-Getting-Started/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/10/15/%E4%BD%BF%E7%94%A8ClassComponent%E6%90%AD%E9%85%8DRedux%E4%BE%86%E5%AF%A6%E4%BD%9C%E8%B3%BC%E7%89%A9%E8%BB%8A/"><img class="next-cover" src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">使用Class Component搭配Redux來實作購物車</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jeremy</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">85</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">8</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Razieldu"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Modern-Js"><span class="toc-number">1.</span> <span class="toc-text">Modern Js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E5%85%A5%E6%96%B9%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">引入方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B"><span class="toc-number">3.</span> <span class="toc-text">資料型態</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Dynamic-Typing"><span class="toc-number">4.</span> <span class="toc-text">Dynamic Typing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8typeof%E4%BE%86%E7%A2%BA%E8%AA%8D%E8%B3%87%E6%96%99%E5%9E%8B%E6%85%8B"><span class="toc-number">5.</span> <span class="toc-text">使用typeof來確認資料型態</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">6.</span> <span class="toc-text">undefined</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-number">7.</span> <span class="toc-text">null</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%8A%E6%95%B8%E5%AE%A3%E5%91%8A"><span class="toc-number">8.</span> <span class="toc-text">變數宣告</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%AC%A6%E8%99%9F"><span class="toc-number">9.</span> <span class="toc-text">操作符號</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%9B%E8%A1%8C%E7%AC%A6%E8%99%9F"><span class="toc-number">10.</span> <span class="toc-text">換行符號</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/17/Udemy-The-Complete-Javascript-Course-ch1-Getting-Started/" title="Udemy The Complete JavaScript Course"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy The Complete JavaScript Course"/></a><div class="content"><a class="title" href="/2022/11/17/Udemy-The-Complete-Javascript-Course-ch1-Getting-Started/" title="Udemy The Complete JavaScript Course">Udemy The Complete JavaScript Course</a><time datetime="2022-11-17T11:08:52.000Z" title="Created 2022-11-17 19:08:52">2022-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/15/%E4%BD%BF%E7%94%A8ClassComponent%E6%90%AD%E9%85%8DRedux%E4%BE%86%E5%AF%A6%E4%BD%9C%E8%B3%BC%E7%89%A9%E8%BB%8A/" title="使用Class Component搭配Redux來實作購物車"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用Class Component搭配Redux來實作購物車"/></a><div class="content"><a class="title" href="/2022/10/15/%E4%BD%BF%E7%94%A8ClassComponent%E6%90%AD%E9%85%8DRedux%E4%BE%86%E5%AF%A6%E4%BD%9C%E8%B3%BC%E7%89%A9%E8%BB%8A/" title="使用Class Component搭配Redux來實作購物車">使用Class Component搭配Redux來實作購物車</a><time datetime="2022-10-15T06:32:21.000Z" title="Created 2022-10-15 14:32:21">2022-10-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/08/Udemy-React-TheCompleteGuide-ch24-Animation/" title="Udemy-React-TheCompleteGuide ch24 Animation  "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-React-TheCompleteGuide ch24 Animation  "/></a><div class="content"><a class="title" href="/2022/10/08/Udemy-React-TheCompleteGuide-ch24-Animation/" title="Udemy-React-TheCompleteGuide ch24 Animation  ">Udemy-React-TheCompleteGuide ch24 Animation  </a><time datetime="2022-10-08T07:28:55.000Z" title="Created 2022-10-08 15:28:55">2022-10-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/06/Udemy-JavaScriptAlgorithmsAndDataStructures-ch1/" title="Udemy-JavaScript Algorithms And DataStructures ch1"><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-JavaScript Algorithms And DataStructures ch1"/></a><div class="content"><a class="title" href="/2022/10/06/Udemy-JavaScriptAlgorithmsAndDataStructures-ch1/" title="Udemy-JavaScript Algorithms And DataStructures ch1">Udemy-JavaScript Algorithms And DataStructures ch1</a><time datetime="2022-10-06T04:44:42.000Z" title="Created 2022-10-06 12:44:42">2022-10-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/30/Udemy-React-TheCompleteGuide-ch26-Testing-React-App/" title="Udemy-React-TheCompleteGuide ch26 Testing React App  "><img src="https://github.com/Razieldu/BLOG-IMG/raw/main/%E9%83%A8%E8%90%BD%E6%A0%BC%E5%9C%96%E7%89%87.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Udemy-React-TheCompleteGuide ch26 Testing React App  "/></a><div class="content"><a class="title" href="/2022/09/30/Udemy-React-TheCompleteGuide-ch26-Testing-React-App/" title="Udemy-React-TheCompleteGuide ch26 Testing React App  ">Udemy-React-TheCompleteGuide ch26 Testing React App  </a><time datetime="2022-09-30T05:53:55.000Z" title="Created 2022-09-30 13:53:55">2022-09-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Jeremy</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
